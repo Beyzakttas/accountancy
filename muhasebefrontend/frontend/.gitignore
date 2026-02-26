@@ -1,26 +1,28 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
+# Dependencies (Bağımlılıklar)
+node_modules/
+**/node_modules/
+.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Environment Files (Gizli Dosyalar - Çok Kritik!)
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+backend/.env
+frontend/.env
 
+# Production & Build (Çıktılar)
+/build/
+/dist/
+/out/
+
+# Debug Logs (Hata Kayıtları)
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-frontend/node_modules/
-backend/node_modules/
-backend/.env
+
+# Misc (Diğer)
+.DS_Store
+.vscode/
