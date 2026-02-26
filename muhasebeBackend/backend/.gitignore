@@ -1,6 +1,13 @@
+# Bağımlılıklar (Bunlar asla gitmemeli, çok yer kaplar)
 node_modules/
-backend/node_modules/
-frontend/node_modules/
+
+# Gizli Bilgiler (Şifreler, API Keyler)
 .env
-backend/.env
-frontend/.env
+
+# Build çıktıları
+dist/
+build/
+
+# IDE dosyaları
+.vscode/
+.DS_Store
